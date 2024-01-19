@@ -57,6 +57,10 @@ h5,
 h6, p{
   font-family: "SUIT-Regular", sans-serif;
 }
+.logo_font{
+  font-weight: 400;
+  font-family:'OKDDUNG';
+}
 
 /*--------------------------------------------------------------
 # Sections
@@ -497,18 +501,20 @@ section {
   background: url(../img/hero-bg.png) top center no-repeat;
   background-size: cover;
 }
-
+.hero h1,h2{
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
 .hero h1 {
   margin: 0;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   color: #fff;
 }
 
 .hero h2 {
-  color: rgba(255,255,255,.8);
+  color: rgb(246, 246, 246);
   margin: 15px 0 0 0;
-  font-size: 26px;
+  font-size: 1.4rem;
 }
 
 .hero .btn-get-started {
@@ -569,15 +575,6 @@ section {
   .hero {
     text-align: center;
   }
-
-  .hero h1 {
-    font-size: 32px;
-  }
-
-  .hero h2 {
-    font-size: 24px;
-  }
-
   .hero .hero-img img {
     width: 100%;
   }
@@ -590,24 +587,26 @@ section {
 # About
 --------------------------------------------------------------*/
 .about .content {
+  color: rgb(4, 2, 61);
   background-color: #f6f9ff;
   padding: 40px;
 }
-
-.about h3 {
-  font-size: 14px;
-  font-weight: 700;
-  color: #713ABE;
+.about .logo_font{
+  font-weight: 400;
+  font-size: 2rem;
+  color: #bb00ff;
   text-transform: uppercase;
 }
 
 .about h2 {
-  font-size: 24px;
-  font-weight: 700;
-  color: #5B0888;
+  font-size: 1.2rem;
+  color:#9d00d5;
+  font-weight: bold;
+  text-shadow: none;
 }
 
 .about p {
+  color:rgb(83, 0, 167);
   margin: 15px 0 30px 0;
   line-height: 24px;
 }
@@ -618,7 +617,7 @@ section {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #713ABE;
+  background: #8000ff;
   box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
 }
 
@@ -642,9 +641,20 @@ section {
 /*--------------------------------------------------------------
 # Values
 --------------------------------------------------------------*/
+.values h2{
+  color: #fff;
+  margin-top: 20px;
+  font-weight: 400;
+  text-shadow: none;
+  font-size: 1.2rem;
+}
+.values p{
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+}
 .values .box {
-  padding: 30px;
-  box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
+  padding:0  30px;
   text-align: center;
   transition: 0.3s;
   height: 100%;
