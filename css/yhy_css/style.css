@@ -9,6 +9,8 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+
 @font-face {
   font-family: 'SUIT-Regular';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
@@ -73,6 +75,7 @@ section {
 .section-header {
   text-align: center;
   padding-bottom: 40px;
+  margin-left:65px;
 }
 
 .section-header h2 {
@@ -80,7 +83,7 @@ section {
   letter-spacing: 1px;
   font-weight: 700;
   margin: 0;
-  color: #713ABE;
+  color: #fff;
   text-transform: uppercase;
 }
 
@@ -90,7 +93,7 @@ section {
   font-size: 38px;
   line-height: 42px;
   font-weight: 700;
-  color: #5B0888;
+  color: #fff;
 }
 
 @media (max-width: 768px) {
@@ -506,15 +509,19 @@ section {
 }
 .hero h1 {
   margin: 0;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
   color: #fff;
 }
 
 .hero h2 {
   color: rgb(246, 246, 246);
-  margin: 15px 0 0 0;
-  font-size: 1.4rem;
+  margin: 15px 0;
+  font-size: 1.5rem;
+}
+.hero h3{
+  font-size: 2rem;
+  margin-top: 20px;
 }
 
 .hero .btn-get-started {
@@ -586,27 +593,30 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about{
+  background-color: #fff;
+}
 .about .content {
-  color: rgb(4, 2, 61);
+  color: rgb(39, 0, 116);
   background-color: #f6f9ff;
   padding: 40px;
 }
 .about .logo_font{
   font-weight: 400;
   font-size: 2rem;
-  color: #bb00ff;
   text-transform: uppercase;
 }
 
 .about h2 {
   font-size: 1.2rem;
-  color:#9d00d5;
+  color: rgb(53, 0, 159);
   font-weight: bold;
   text-shadow: none;
 }
 
 .about p {
-  color:rgb(83, 0, 167);
+  font-size: 1rem;
+  color:rgb(34, 3, 97);
   margin: 15px 0 30px 0;
   line-height: 24px;
 }
@@ -617,7 +627,7 @@ section {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #8000ff;
+  background:rgb(39, 0, 116);
   box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
 }
 
@@ -640,24 +650,39 @@ section {
 
 /*--------------------------------------------------------------
 # Values
---------------------------------------------------------------*/
+/* rgb(34, 3, 97); rgb(39, 0, 116); rgb(53, 0, 159);*/
+/*--------------------------------------------------------------*/
+#values{
+  background-color: #fff;
+}
+
 .values h2{
-  color: #fff;
+  color: rgb(39, 0, 116);
   margin-top: 20px;
   font-weight: 400;
   text-shadow: none;
-  font-size: 1.2rem;
-}
-.values p{
   font-size: 1.4rem;
-  font-weight: 600;
-  color: #fff;
+}
+.values .section-header img{
+  width: 13%;
+}
+@media (max-width:768px) {
+  .values .section-header img{
+    width: 20%;
+  }
+}
+.values .section-header p{
+  font-size: 1.5rem;
+  color: rgb(34, 3, 97);
 }
 .values .box {
   padding:0  30px;
   text-align: center;
   transition: 0.3s;
   height: 100%;
+  color: rgb(34,3,97);
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+
 }
 
 .values .box img {
@@ -667,14 +692,10 @@ section {
 }
 
 .values .box h3 {
-  font-size: 24px;
-  color: #5B0888;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: bold;
   margin-bottom: 18px;
-}
-
-.values .box:hover {
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  color: rgb(39, 0, 116);
 }
 
 .values .box:hover img {
@@ -721,6 +742,7 @@ section {
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
+
 .features .feature-box {
   padding: 24px 20px;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
@@ -730,7 +752,7 @@ section {
 
 .features .feature-box h3 {
   font-size: 18px;
-  color: #5B0888;
+  color: #fff;
   font-weight: 700;
   margin: 0;
 }
@@ -746,7 +768,7 @@ section {
 }
 
 .features .feature-box:hover i {
-  background: #713ABE;
+  background: #e600ff;
   color: #fff;
 }
 
@@ -755,7 +777,7 @@ section {
 }
 
 .features .feture-tabs h3 {
-  color: #5B0888;
+  color: #fff;
   font-weight: 700;
   font-size: 32px;
   margin-bottom: 10px;
@@ -846,6 +868,13 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.services h2{
+  color: white;
+}
+.services p{
+  color:white;
+}
+
 .services .service-box {
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   height: 100%;
@@ -853,6 +882,7 @@ section {
   text-align: center;
   transition: 0.3s;
   border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .services .service-box .icon {
@@ -867,7 +897,7 @@ section {
 }
 
 .services .service-box h3 {
-  color: #444444;
+  color: #3e3e3e;
   font-weight: 700;
 }
 
@@ -2451,4 +2481,8 @@ section {
   text-align: center;
   font-size: 13px;
   color: #5B0888;
+}
+}
+#counts{
+  display: none;
 }
