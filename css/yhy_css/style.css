@@ -608,14 +608,14 @@ section {
 }
 
 .about h2 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: rgb(53, 0, 159);
   font-weight: bold;
   text-shadow: none;
 }
 
 .about p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color:rgb(34, 3, 97);
   margin: 15px 0 30px 0;
   line-height: 24px;
@@ -661,7 +661,7 @@ section {
   margin-top: 20px;
   font-weight: 400;
   text-shadow: none;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 .values .section-header img{
   width: 13%;
@@ -672,15 +672,15 @@ section {
   }
 }
 .values .section-header p{
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: rgb(34, 3, 97);
 }
 .values .box {
-  padding:0  30px;
   text-align: center;
   transition: 0.3s;
   height: 100%;
   color: rgb(34,3,97);
+  border-bottom: 2px solid rgb(34, 3, 97);
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
 
 }
@@ -692,12 +692,23 @@ section {
 }
 
 .values .box h3 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
-  margin-bottom: 18px;
+  margin: 20px 0;
   color: rgb(39, 0, 116);
 }
-
+.values .box p{
+  width: 100%; height: 10px;
+  padding: 3% 6%;
+  font-size: 1rem;
+  margin-bottom: 0;
+  color: rgba(34, 3, 97,0);
+}
+.values .box:hover p{
+  height: 120px;
+  transition-duration: .5s;
+  color: rgb(34, 3, 97);
+}
 .values .box:hover img {
   transform: scale(1);
 }
@@ -742,7 +753,12 @@ section {
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
-
+.features .row div{
+  justify-content: center;
+}
+.features .row div img{
+  border-radius: 10px;
+}
 .features .feature-box {
   padding: 24px 20px;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
@@ -868,13 +884,25 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+#services{
+  background-color: #fff;
+}
 .services h2{
-  color: white;
+  color: rgb(39, 0, 116);
+  margin-top: 20px;
+  font-weight: 400;
+  text-shadow: none;
+  font-size: 1.4rem;
 }
 .services p{
-  color:white;
+  font-size: 1.5rem;
+  color: rgb(34, 3, 97);
 }
-
+@media (min-width:1200px) {
+  .services .section-header img{
+    width: 12%;
+  } 
+}
 .services .service-box {
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   height: 100%;
@@ -882,7 +910,7 @@ section {
   text-align: center;
   transition: 0.3s;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, .7);
 }
 
 .services .service-box .icon {
@@ -897,8 +925,13 @@ section {
 }
 
 .services .service-box h3 {
-  color: #3e3e3e;
+  color: #575757;
+  font-size: 1.4rem;
   font-weight: 700;
+}
+.services .service-box p{
+  color: #3e3e3e;
+  font-size: 1.2rem;
 }
 
 .services .service-box .read-more {
