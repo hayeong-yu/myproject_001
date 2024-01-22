@@ -666,7 +666,7 @@ section {
 .values .section-header img{
   width: 13%;
 }
-@media (max-width:768px) {
+@media (max-width:960px) {
   .values .section-header img{
     width: 20%;
   }
@@ -704,11 +704,12 @@ section {
   margin-bottom: 0;
   color: rgba(34, 3, 97,0);
 }
+/*
 .values .box:hover p{
   height: 120px;
   transition-duration: .5s;
   color: rgb(34, 3, 97);
-}
+} */
 .values .box:hover img {
   transform: scale(1);
 }
