@@ -1234,6 +1234,7 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  border-radius: 20px;
   background: rgba(255, 255, 255, 0.75);
 }
 
@@ -1251,6 +1252,8 @@ section {
 }
 
 .portfolio .portfolio-wrap img {
+  width: 100%;
+
   transition: 1s;
 }
 
@@ -2518,5 +2521,11 @@ section {
 }
 }
 #counts{
+  display: none;
+}
+#ceo{
+  display: none;
+}
+#team{
   display: none;
 }
